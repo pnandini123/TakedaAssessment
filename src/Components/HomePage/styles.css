@@ -1,0 +1,234 @@
+/* HomePage.css */
+
+.app {
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  padding-top: 0px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.user-actions a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.filter-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.filter-section h2 {
+  margin-bottom: 10px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group h3 {
+  margin-bottom: 5px;
+}
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+}
+.navigation-container {
+  padding-left: 0px;
+}
+.product-section {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding-top: 60px;
+  row-gap: 60px;
+  margin-top: 60px;
+}
+
+.product-card {
+  padding: 1px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+}
+
+.product-card h3,
+.product-card p {
+  margin: 0;
+  text-align: left;
+}
+
+.rating {
+  color: black;
+}
+
+.pagination {
+  display: flex;
+  justify-content: start;
+  margin-top: 60px;
+  column-gap: 30px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+.pagination-active {
+  border: 1px solid black;
+  background-color: black !important;
+  color: white;
+}
+.product-subtitle-container {
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.product-category {
+  font-size: 10px;
+  color: gray;
+}
+.product-name {
+  font-size: 16px;
+  position: relative;
+  background-color: white;
+  top: -30px;
+  width: 65%;
+  padding-top: 30px;
+}
+.product-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  &.primary-navigation {
+    margin: 0 auto;
+    display: block;
+
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+
+    ul li {
+      list-style: none;
+      margin: 0 auto;
+
+      display: inline-block;
+      padding: 10px;
+      padding-left: 0px;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+      font-family: arvo;
+      border-bottom: 1px solid #d9d5d5;
+    }
+
+    li a {
+      color: black;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+
+    li a:hover {
+      color: #3ca0e7;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: white;
+      z-index: 9999;
+      height: auto;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px #ccc;
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #3ca0e7;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: #3ca0e7;
+  }
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+.navigation-title {
+  width: 270px;
+  text-align: start;
+}
+.filter-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-icon {
+  width: 16px;
+  height: 16px;
+}
+.filter {
+  color: gray;
+  margin-top: 0px;
+}
+.price-range {
+  margin-top: 20px;
+}
+.dropdown {
+  padding: 20px !important;
+}
